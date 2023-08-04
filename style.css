@@ -1,0 +1,88 @@
+/* global */
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+h1 {
+    font-family: "Julius Sans One", sans-serif;
+}
+
+h1,p {
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.35);
+}
+
+a {
+    padding: 0.75em !important;
+}
+
+button {
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.35);
+}
+
+a:hover,button:hover {
+    background-color: #69482b !important;
+    color: white !important;
+}
+/* top */
+.topSection {
+    background-color: #987352; width: 100vw !important; height: 100vh !important;
+}
+
+.titleBeans {
+    width: 900px !important;
+}
+
+.titleSvg{
+    width: 100px !important;
+}
+
+.coffee-bean {
+    width: min(70px,20%);
+}
+.svg {
+    width: 30px;
+}
+
+::-webkit-scrollbar {
+    width: 20px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+  }
+   
+  ::-webkit-scrollbar-thumb {
+    background: rgb(139, 138, 138); 
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #504f4f; 
+  }
+
+/* animations -------------- */
+.smoke {
+    animation: rotate infinite linear 10s;
+}
+
+@keyframes rotate {
+    0% {
+        rotate: 0deg;
+    } 100%{
+        rotate: 360deg;
+    }
+}
+
+.opacity {
+    opacity: 1;
+    animation: opacity 1s !important;
+}
+
+@keyframes opacity {
+    from {
+        transform: translateY(-100px);
+        opacity: 0;
+    } to {
+        transform: translate(0);
+        opacity: 1;
+    }
+}
